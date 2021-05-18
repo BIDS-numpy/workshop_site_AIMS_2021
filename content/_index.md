@@ -7,4 +7,16 @@ hosted by the [AIMS][aims_landing]
 [aims_landing]: https://nexteinstein.org/
 [ammi_landing]: https://aimsammi.org/
 
-### June 3rd-4th, 2021
+### Welcome!
+
+This site is dedicated to the organization of the scientific Python new
+contributors workshop, hosted virtually on **June 3rd-4th 2021** for the
+2021 cohort of AMMI students.
+The goal of this workshop is to connect AMMI students with developers of
+open source software packages commonly used in their research.
+Developers from some popular scientific software packages like
+[NumPy](https://numpy.org/), [NetworkX](https://networkx.org/),
+and [scikit-image](https://scikit-image.org/) will introduce their projects,
+and provide students a behind-the-scenes look at how these packages are
+developed.
+The workshop will conclude with a **mentored sprint**.
