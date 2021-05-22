@@ -9,9 +9,9 @@ hosted by the [AIMS][aims_landing]
 
 ### Welcome!
 
-{{% notice tip %}}
-Please check back often! Information will be updated leading up to the
-workshop.
+{{% notice note %}}
+**Students:** Please visit the **Preparation** page and complete the tasks
+there *before* the workshop begins!
 {{% /notice %}}
 
 This site is dedicated to the organization of the scientific Python new
@@ -26,7 +26,29 @@ and provide students a behind-the-scenes look at how these packages are
 developed.
 The workshop will conclude with a **mentored sprint**.
 
-{{% notice note %}}
-**Students:** Please visit the **Preparation** page and complete the tasks
-there *before* the workshop begins!
+### Schedule
+
+The two-day workshop will be held in the afternoons from **2PM - 5PM GMT** on
+Thursday June 3rd and Friday June 4th.
+
+Click [here][timeanddate] to view the workshop times in your timezone.
+
+{{% notice warning %}}
+This **tentative** schedule is subject to change; please check back often!
+Information will be updated leading up to the workshop.
 {{% /notice %}}
+
+#### Thursday, June 3rd
+
+ - **14:00 - 15:00** Welcome and General Introduction
+ - **15:00 - 15:45** Contributing to OSS - Getting Started
+ - **16:00 - 17:00** Project introductions
+
+#### Friday, June 4th
+
+ - **14:00 - 15:00** Sprint preparation
+ - **15:00 - 17:00** Mentored sprint
+
+Please see the side bar for further detail about the listed activities.
+
+[timeanddate]: https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&iso=20210603T14&p1=%3A&ah=3
