@@ -9,6 +9,11 @@ hosted by the [AIMS][aims_landing]
 
 ### Welcome!
 
+{{% notice tip %}}
+Please check back often! Information will be updated leading up to the
+workshop.
+{{% /notice %}}
+
 This site is dedicated to the organization of the scientific Python new
 contributors workshop, hosted virtually on **June 3rd-4th 2021** for the
 2021 cohort of AMMI students.
@@ -20,3 +25,8 @@ and [scikit-image](https://scikit-image.org/) will introduce their projects,
 and provide students a behind-the-scenes look at how these packages are
 developed.
 The workshop will conclude with a **mentored sprint**.
+
+{{% notice note %}}
+**Students:** Please visit the **Preparation** page and complete the tasks
+there *before* the workshop begins!
+{{% /notice %}}
