@@ -1,7 +1,8 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "AMMI OSS Workshop"
+title = "AMMI Scientific Python Workshop"
 theme = "hugo-theme-learn"
 
 [params]
   themeVariant = "blue"
+  titleSeparator = " "
