@@ -30,21 +30,21 @@ Thursday June 3rd and Friday June 4th.
 
 Click [here][timeanddate] to view the workshop times in your timezone.
 
-{{% notice warning %}}
+{{% notice info %}}
 This **tentative** schedule is subject to change; please check back often!
 Information will be updated leading up to the workshop.
 {{% /notice %}}
 
 #### Thursday, June 3rd
 
- - **14:00 - 15:00** Welcome and General Introduction
- - **15:00 - 15:45** Contributing to OSS - Getting Started
- - **16:00 - 17:00** Project introductions
+ - **14:00 - 15:00:** Welcome and General Introduction
+ - **15:00 - 15:45:** Contributing to OSS - Getting Started
+ - **16:00 - 17:00:** Project introductions
 
 #### Friday, June 4th
 
- - **14:00 - 15:00** Sprint preparation
- - **15:00 - 17:00** Mentored sprint
+ - **14:00 - 15:00:** Sprint preparation
+ - **15:00 - 17:00:** Mentored sprint
 
 Please see the side bar for further detail about the listed activities.
 
