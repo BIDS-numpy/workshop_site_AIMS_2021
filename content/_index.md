@@ -7,8 +7,8 @@ hosted by the [AIMS][aims_landing]
 ### Welcome!
 
 {{% notice note %}}
-**Students:** Please visit the **Preparation** page and complete the tasks
-there *before* the workshop begins!
+**Students:** Please visit the [Preparation]({{< relref "preparation/_index.md" >}})
+page and complete the tasks there *before* the workshop begins!
 {{% /notice %}}
 
 This site is dedicated to the organization of the scientific Python new
