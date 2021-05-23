@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/preparation/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/</loc>
     <lastmod>2021-05-23T07:13:11-07:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/</loc>
     <lastmod>2021-05-23T07:19:17-07:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>http://example.org/preparation/survey/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/survey/</loc>
     <lastmod>2021-05-23T07:19:17-07:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/tags/</loc>
   </url>
 </urlset>
