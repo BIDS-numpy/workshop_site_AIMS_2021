@@ -4,9 +4,6 @@ A workshop for new contributors to open source scientific software in Python,
 hosted by the [AIMS][aims_landing]
 [African Master's in Machine Intelligence][ammi_landing] program.
 
-[aims_landing]: https://nexteinstein.org/
-[ammi_landing]: https://aimsammi.org/
-
 ### Welcome!
 
 {{% notice note %}}
@@ -51,4 +48,10 @@ Information will be updated leading up to the workshop.
 
 Please see the side bar for further detail about the listed activities.
 
+### Projects
+
+TODO: icons of participating projects
+
+[aims_landing]: https://nexteinstein.org/
+[ammi_landing]: https://aimsammi.org/
 [timeanddate]: https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&iso=20210603T14&p1=%3A&ah=3
