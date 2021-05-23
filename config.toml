@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://bids-numpy.github.io/workshop_site_AIMS_2021/"
 languageCode = "en-us"
 title = "AMMI Scientific Python Workshop"
 theme = "hugo-theme-learn"
