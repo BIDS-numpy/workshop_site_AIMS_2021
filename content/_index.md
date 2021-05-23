@@ -2,7 +2,7 @@
 
 A workshop for new contributors to open source scientific software in Python,
 hosted by the [AIMS][aims_landing]
-[African Master's in Machine Intelligence][ammi_landing] program.
+[African Master's in Machine Intelligence (AMMI)][ammi_landing] program.
 
 ### Welcome!
 
