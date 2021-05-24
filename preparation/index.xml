@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Preparation on AMMI Scientific Python Workshop</title>
-    <link>/preparation/</link>
+    <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/</link>
     <description>Recent content in Preparation on AMMI Scientific Python Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 May 2021 07:13:11 -0700</lastBuildDate><atom:link href="/preparation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 May 2021 07:13:11 -0700</lastBuildDate><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Survey</title>
-      <link>/preparation/survey/</link>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/survey/</link>
       <pubDate>Sun, 23 May 2021 07:19:17 -0700</pubDate>
       
-      <guid>/preparation/survey/</guid>
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/survey/</guid>
       <description>AMMI Students Please complete the following survey to help the mentors prepare content for the workshop. Having some basic information about the workflows and development practices you&amp;rsquo;re most familiar with will help us tailor the workshop to ensure that you get the most out of it! Personal information is not being collected! All answers to the survey will remain completely anonymous and the aggregate results will not be shared with anyone except the workshop mentors.</description>
     </item>
     
