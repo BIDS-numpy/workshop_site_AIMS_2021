@@ -4,5 +4,7 @@ title = "AMMI Scientific Python Workshop"
 theme = "hugo-theme-learn"
 
 [params]
+  author = "Ross Barnowski"
   themeVariant = "blue"
   titleSeparator = " "
+  disableLandingPageButton = true
