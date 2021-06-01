@@ -2,6 +2,7 @@
 title: "About me"
 date: 2021-05-23T07:19:17-07:00
 draft: false
+weight: 1
 ---
 
 ### A bit about me

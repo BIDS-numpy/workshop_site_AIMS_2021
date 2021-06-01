@@ -2,6 +2,7 @@
 title: Why Open Source?
 menuTitle: "Motivation"
 draft: false
+weight: 2
 ---
 
 What's so special about open source software?
