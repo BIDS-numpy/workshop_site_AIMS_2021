@@ -38,7 +38,7 @@ You be the judge on which one is easier to understand!
 
 Any improvement you contribute to an open-source library will benefit **all**
 the users of that library.
-For instance, let's say you manage to [reduce the array creation time][np-19102]
+For instance, let's say you manage to [reduce the array creation time][np-19012]
 in some cases.
 A modest performance improvement like this might equate to saving **hundreds of
 CPU-hours / year!**
@@ -58,3 +58,4 @@ executable, eliminating the need to translate from an explanation to a working e
 where mistakes are often introduced.
 
 [mlem_wiki]: https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm
+[np-19012]: https://github.com/numpy/numpy/pull/19012
