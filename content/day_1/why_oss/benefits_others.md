@@ -1,5 +1,5 @@
 ---
-title: Benefits Others
+title: It Benefits Others
 draft: false
 weight: 10
 ---
@@ -33,6 +33,14 @@ def compute_em_iteration(λ, α, s):
 ```
 
 You be the judge on which one is easier to understand!
+
+#### Reproducibility
+
+Often times other researchers will need to **compare** their results to your
+own.
+By publishing your work as open-source software, others will be able to
+reproduce your results as a comparison point *without* having to re-implement
+anything from scratch.
 
 #### Usability
 
