@@ -34,6 +34,15 @@ def compute_em_iteration(λ, α, s):
 
 You be the judge on which one is easier to understand!
 
+#### Outsized impact
+
+Any improvement you contribute to an open-source library will benefit **all**
+the users of that library.
+For instance, let's say you manage to [reduce the array creation time][np-19102]
+in some cases.
+A modest performance improvement like this might equate to saving **hundreds of
+CPU-hours / year!**
+
 #### Reproducibility
 
 Often times other researchers will need to **compare** their results to your
