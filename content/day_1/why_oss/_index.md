@@ -1,5 +1,6 @@
 ---
 title: Why Open Source?
+menuTitle: "Motivation"
 draft: false
 ---
 
