@@ -5,8 +5,6 @@ draft: false
 weight: 1
 ---
 
-### A bit about me
-
 {{< figure 
     src=https://bids.berkeley.edu/sites/default/files/styles/300x300/public/ross_barnowski_square.png?itok=1e1pRJJI 
     alt="rossbar @ BIDS"

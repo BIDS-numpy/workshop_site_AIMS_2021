@@ -4,7 +4,7 @@ weight = 5
 +++
 
 My background is in nuclear engineering, specifically radiation
-instrumentation --- devices to measure and create images of sources of
+instrumentation --- devices to measure and image of sources of ionizing
 radiation.
 The type of 3D radiation imaging that I studied has applications in
 environmental monitoring:
