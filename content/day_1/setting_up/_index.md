@@ -1,6 +1,7 @@
 ---
-title: "Setting up a Development Environment"
+title: "Setting Up"
 draft: false
+weight: 4
 ---
 
 There are two basic things you need to do in order to work on an open-source
