@@ -129,5 +129,22 @@ However, the dependencies for building the documentation **are not included**!
 Can you figure out how to install the extra dependencies required to
 build the documentation?
 *Hint: check out the files in the `requirements/` directory*
+{{% /notice %}}
+
+### Step 2: Install the project from source
+
+Now that we have a nice virtual environment with all of the necessary
+dependencies installed, we come to the final step before we can run the
+development version of the project locally: building and installing.
+Like everything else, there are different approaches (each with their own
+nuances); we don't have time to even scratch the surface here.
+Instead we'll present a basic recipe using `pip`.
+You'll have plenty of time to experiment during your
+[homework]({{< ref "/day_1/homework" >}}) :wink:.
+
+From the top-level directory in the repository: `python -m pip install -e .`[^1][^2]
+
+[^1]: The `-e` flag creates an [editable](https://pip.pypa.io/en/stable/cli/pip_install/#install-editable) mode.
+[^2]: `pip` can be used to build from source within a `conda` environment.
 
 [venv]: https://docs.python.org/3/tutorial/venv.html
