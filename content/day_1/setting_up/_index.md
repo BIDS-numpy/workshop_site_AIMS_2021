@@ -10,6 +10,9 @@ Python project:
  1. Get the source code (`git` + remote hosts like [GitHub][gh] or [GitLab][gl]).
  2. Set up a development environment
 
+In this section, we'll cover these two steps by doing an example walkthrough
+with NetworkX!
+
 [^1]: At least for creating PRs - a development environment is not strictly necessary to
       open an issue or perform a code review, though it is helpful for non-trivial
       changes.
