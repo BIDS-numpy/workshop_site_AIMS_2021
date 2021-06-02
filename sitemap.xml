@@ -2,11 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/</loc>
+    <lastmod>2021-05-23T07:19:17-07:00</lastmod>
+  </url><url>
     <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/</loc>
     <lastmod>2021-05-23T07:13:11-07:00</lastmod>
   </url><url>
-    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/</loc>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/</loc>
+    <lastmod>2021-05-30T07:13:11-07:00</lastmod>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/ecosystem/</loc>
     <lastmod>2021-05-23T07:19:17-07:00</lastmod>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/homework/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_you/</loc>
+  </url><url>
+    <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/</loc>
+    <lastmod>2021-05-30T07:13:11-07:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/survey/</loc>

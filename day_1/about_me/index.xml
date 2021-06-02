@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About me on AMMI Scientific Python Workshop</title>
+    <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/</link>
+    <description>Recent content in About me on AMMI Scientific Python Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 May 2021 07:19:17 -0700</lastBuildDate><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Background</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</guid>
+      <description>My background is in nuclear engineering, specifically radiation instrumentation &amp;mdash; devices to measure and image of sources of ionizing radiation. The type of 3D radiation imaging that I studied has applications in environmental monitoring:
+As well as medical imaging:
+This research was entirely made possible by open-source software. Specifically, my colleagues and I relied heavily on various open-source packages like rgbdslam and Google Cartographer to explore integrating our radiation imaging hardware with real-time SLAM algorithms.</description>
+    </item>
+    
+    <item>
+      <title>The Scientific Python Ecosystem</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/ecosystem/</link>
+      <pubDate>Sun, 23 May 2021 07:19:17 -0700</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/ecosystem/</guid>
+      <description>In general, I am interested in the scientific Python ecosystem, i.e. the collection of open-source Python libraries that are the cornerstone of modern science, engineering, and research:
+ Scientific Python EcosystemA visualization of the scientific Python ecosystem. From a nature methods paper on array programming with NumPy.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

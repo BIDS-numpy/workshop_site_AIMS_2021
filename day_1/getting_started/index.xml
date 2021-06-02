@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on AMMI Scientific Python Workshop</title>
+    <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/</link>
+    <description>Recent content in Getting Started on AMMI Scientific Python Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

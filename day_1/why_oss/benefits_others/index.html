@@ -9,7 +9,7 @@
 
     
 
-    <title>Categories   AMMI Scientific Python Workshop</title>
+    <title>It Benefits Others   AMMI Scientific Python Workshop</title>
 
     
     <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622620054" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/categories/">
+  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/">
     <nav id="sidebar" class="">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/day_1/" title="Day 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -247,7 +247,7 @@
   
     
     <li data-nav-id="/day_1/why_oss/" title="Why Open Source?" class="dd-item
-        
+        parent
         
         
         ">
@@ -294,7 +294,7 @@
  
   
     
-      <li data-nav-id="/day_1/why_oss/benefits_others/" title="It Benefits Others" class="dd-item ">
+      <li data-nav-id="/day_1/why_oss/benefits_others/" title="It Benefits Others" class="dd-item active">
         <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/">
         It Benefits Others
         
@@ -435,7 +435,19 @@
             
           
           
-            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/'>Day 1</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/'>Why Open Source?</a> > It Benefits Others
+          
+        
+          
+        
           
         
           
@@ -446,7 +458,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -462,24 +482,54 @@
           
             <h1>
               
-                category ::
-              
-              Categories
+              It Benefits Others
             </h1>
           
 
         
 
 
-
-
-
+<p>There are many ways that contributing to open-source software benefits other
+researchers:</p>
+<h4 id="accessibility">Accessibility</h4>
+<p>Contributing to open-source software packages makes your work accessible to
+anyone with an internet connection!</p>
 <ul>
-	
+<li>Traditional publishing media such as scientific journals or conferences
+often require access fees or have limited attendance numbers.</li>
 </ul>
+<h4 id="effective-communication">Effective Communication</h4>
+<p>Well-written Python code is often among the most effective ways to communicate!
+For example, here&rsquo;s the mathematical formula for a
+<a href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm">List-mode Maximum Likelihood Expectation Maximization</a> algorithm used for
+image reconstruction:</p>
+<p><img src="https://bids-numpy.github.io/workshop_site_AIMS_2021/images/mlem_eqn.png" alt="List-mode ML-EM equation"></p>
+<p>&hellip;and here is a basic (not particularly efficient) implementation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_em_iteration</span>(<span style="color:#960050;background-color:#1e0010">λ</span>, <span style="color:#960050;background-color:#1e0010">α</span>, s):
+    term_one <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (<span style="color:#960050;background-color:#1e0010">α</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#960050;background-color:#1e0010">λ</span>)
+    term_two <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">α</span><span style="color:#f92672">.</span>T <span style="color:#960050;background-color:#1e0010">@</span> term_one
+    <span style="color:#66d9ef">return</span> (<span style="color:#960050;background-color:#1e0010">λ</span> <span style="color:#f92672">/</span> s) <span style="color:#f92672">*</span> term_two
+</code></pre></div><p>You be the judge on which one is easier to understand!</p>
+<h4 id="outsized-impact">Outsized impact</h4>
+<p>Any improvement you contribute to an open-source library will benefit <strong>all</strong>
+the users of that library.
+For instance, let&rsquo;s say you manage to <a href="https://github.com/numpy/numpy/pull/19012">reduce the array creation time</a>
+in some cases.
+A modest performance improvement like this might equate to saving <strong>hundreds of
+CPU-hours / year!</strong></p>
+<h4 id="reproducibility">Reproducibility</h4>
+<p>Often times other researchers will need to <strong>compare</strong> their results to your
+own.
+By publishing your work as open-source software, others will be able to
+reproduce your results as a comparison point <em>without</em> having to re-implement
+anything from scratch.</p>
+<h4 id="usability">Usability</h4>
+<p>Python has an advantage over &ldquo;pseudocode&rdquo; in that the code is directly
+executable, eliminating the need to translate from an explanation to a working example
+where mistakes are often introduced.</p>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -549,6 +599,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -564,53 +615,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -652,10 +658,66 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -715,8 +777,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/" title="OSS for scientific research"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/" title="Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_you/" title="It Benefits You" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -748,3 +812,4 @@
 
   </body>
 </html>
+

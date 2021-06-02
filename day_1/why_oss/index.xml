@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Why Open Source? on AMMI Scientific Python Workshop</title>
+    <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/</link>
+    <description>Recent content in Why Open Source? on AMMI Scientific Python Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSS for scientific research</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/</guid>
+      <description>Scientific research depends on the effective communication of new ideas, methods, and results. Other researchers must be able to understand your ideas and reproduce your results in order to critique and expand upon your work. The open source development model, based on distributed version control (like git) and permissive licenses guarantee that everyone has equal access to others&#39; work and can verify and build upon it without limitation.
+More and more, modern research involves the development of software to implement and explore new ideas.</description>
+    </item>
+    
+    <item>
+      <title>It Benefits Others</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/</guid>
+      <description>There are many ways that contributing to open-source software benefits other researchers:
+Accessibility Contributing to open-source software packages makes your work accessible to anyone with an internet connection!
+ Traditional publishing media such as scientific journals or conferences often require access fees or have limited attendance numbers.  Effective Communication Well-written Python code is often among the most effective ways to communicate! For example, here&amp;rsquo;s the mathematical formula for a List-mode Maximum Likelihood Expectation Maximization algorithm used for image reconstruction:</description>
+    </item>
+    
+    <item>
+      <title>It Benefits You</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_you/</guid>
+      <description>At first glance, it may seem counter-intuitive that contributing to open source software benefits the contributor, but this is true in many ways! Here are just a few examples:
+Becoming a better developer One of the best ways to improve your own coding ability is by reading code written by others. At face value this seems like simple advice, but the first time you sit down and try to just read some code, you&amp;rsquo;ll realize this isn&amp;rsquo;t as simple as it seems.</description>
+    </item>
+    
+  </channel>
+</rss>
