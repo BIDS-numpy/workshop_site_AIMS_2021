@@ -9,7 +9,7 @@
 
     
 
-    <title>   AMMI Scientific Python Workshop</title>
+    <title>Tests   AMMI Scientific Python Workshop</title>
 
     
     <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622712044" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/">
+  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/">
     <nav id="sidebar" class="">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/day_1/" title="Day 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -346,7 +346,7 @@
   
     
     <li data-nav-id="/day_1/getting_started/" title="Getting Started" class="dd-item
-        
+        parent
         
         
         ">
@@ -375,7 +375,7 @@
   
     
     <li data-nav-id="/day_1/getting_started/anatomy/" title="Anatomy of a Python project" class="dd-item
-        
+        parent
         
         
         ">
@@ -422,7 +422,7 @@
  
   
     
-      <li data-nav-id="/day_1/getting_started/anatomy/testing/" title="Tests" class="dd-item ">
+      <li data-nav-id="/day_1/getting_started/anatomy/testing/" title="Tests" class="dd-item active">
         <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/">
         Tests
         
@@ -601,64 +601,232 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/'>Day 1</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/'>Getting Started</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/'>Anatomy of a Python project</a> > Tests
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Tests
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aimsammi-scientific-python-workshop">AIMS/AMMI Scientific Python Workshop</h1>
-<p>A workshop for new contributors to open source scientific software in Python,
-hosted by the <a href="https://nexteinstein.org/">AIMS</a>
-<a href="https://aimsammi.org/">African Master&rsquo;s in Machine Intelligence (AMMI)</a> program.</p>
-<h3 id="welcome">Welcome!</h3>
+<p>The collection of all tests that are included in the software package,
+often referred to collectively as the <strong>test suite</strong>.
+The test suite is an important part of any software project, but this is
+especially true for open source software.
+Tests help define expected behavior, and are extremely helpful in detecting
+<strong>unexpected</strong> behavior changes.
+Any time you make a change to an existing project, you should <em>always</em> run the
+test suite to check that your changes have not changed behavior in a way that
+would be incompatible with the existing software<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>A typical workflow for changing existing code would look something like this:</p>
+<ol>
+<li>Setup and enter the development environment for your project.</li>
+<li>Before making any changes, <strong>run the test suite</strong> to ensure that everything
+is okay with your development environment.</li>
+<li>Make the change(s) as you intended.</li>
+<li>Run the test suite again to see if the changes you made have broken
+anything.</li>
+<li>Repeat steps 3-4 until you are satisfied with your change and the test
+suite passes without any unexpected failures.</li>
+</ol>
+<h4 id="python-testing-framework">Python testing framework</h4>
+<p>Scientific projects generally use the <a href="https://docs.pytest.org/">pytest</a> testing framework to
+construct the test suite.
+<code>pytest</code> is a separate program that must be installed in order to run the
+test suite locally.
+We won&rsquo;t have time to go into detail on <code>pytest</code>, but we can cover a few
+basic patterns:</p>
+<ul>
+<li>Tests are defined <em>with the source code</em> in a Python package.</li>
+<li>Typically, modules or packages will have an associated <code>tests/</code> directory.
+This directory will contain files typically called <code>test_*.py</code> where <code>*</code>
+refers back to the object or circumstance that is being tested<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</li>
+<li>Within each <code>test_*.py</code>, you will find functions and/or classes that
+contain individual tests or collections of tests. These are typically named
+<code>test_*()</code> for functions or <code>Test*</code> for classes, where the <code>*</code> is a
+description of test-case or collection of test cases, respectively.</li>
+</ul>
+<p>It&rsquo;s simpler than it sounds! Let&rsquo;s take a look at an example, say the
+<a href="https://github.com/numpy/numpy/blob/6790873334b143117f4e8d1f515def8c7fdeb9fb/numpy/lib/function_base.py#L3574">numpy.median</a> function and <a href="https://github.com/numpy/numpy/blob/6790873334b143117f4e8d1f515def8c7fdeb9fb/numpy/lib/tests/test_function_base.py#L3308">it&rsquo;s tests</a>.</p>
+<h4 id="writing-tests">Writing tests</h4>
+<p>Whenever you are proposing to add something new to a library (e.g. a function
+or a class), you will have to <strong>add tests</strong> for the new functionality!
+This may sound like a burden, but it is a useful and important part of the
+development process.
+In fact, it is often recommended that you write tests <em>before you write the
+code for the new function itself</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>!
+It sounds counterintuitive, but this is an effective way of laying out the
+expected behavior for the new functionality.
+Referring back to the development cycle at the top of the page - if you insert
+a step e.g. <code>2a. Write tests for new function</code>, then following the rest of
+the procedure will give you confidence that your new functionality behaves as
+you expect <em>and</em> doesn&rsquo;t introduce unexpected changes in the rest of the library.</p>
+<p>We won&rsquo;t spend too much time on the art of writing tests itself, but</p>
+<h4 id="test-coverage">Test coverage</h4>
+<p>A test suite is only useful if there are tests covering the expected behavior
+for everything in the library!
+For example, if you have a (silly) function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>(a: Int) <span style="color:#f92672">-&gt;</span> Int:
+    <span style="color:#66d9ef">if</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">return</span> abs(a)
+    <span style="color:#66d9ef">elif</span> a <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;a can&#39;t be zero!&#34;</span>)
+    <span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>:
+        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> a
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> a
+</code></pre></div><p>Then you might be tempted to write a test like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_foo</span>():
+    a <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>
+    <span style="color:#66d9ef">assert</span> foo(a) <span style="color:#f92672">==</span> <span style="color:#ae81ff">12</span>
+</code></pre></div><p>and call it a day 😄.</p>
+<p>The problem with this is that this single test misses many different <strong>branches</strong>
+that the function can take depending on the input value, so the behavior of
+the function as a whole is not adequately tested.
+A better set of tests would <em>at least</em> cover all the branches:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pytest
 
-<div class="notices note" ><p><strong>Students:</strong> Please visit the <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/">Preparation</a>
-page and complete the tasks there <em>before</em> the workshop begins!</p>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_foo_negative_input</span>():
+    <span style="color:#66d9ef">assert</span> foo(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_foo_zero_input</span>():
+    <span style="color:#66d9ef">with</span> pytest<span style="color:#f92672">.</span>raises(<span style="color:#a6e22e">ValueError</span>):
+        foo(<span style="color:#ae81ff">0</span>)
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_foo_gt_0_lt_3</span>():
+    <span style="color:#66d9ef">assert</span> foo(<span style="color:#ae81ff">2</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_foo_gt_3</span>():
+    <span style="color:#66d9ef">assert</span> foo(<span style="color:#ae81ff">6</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">12</span>
+</code></pre></div><p>It&rsquo;s clear how we&rsquo;ve improved the <strong>test coverage</strong> here, as we have at least
+one test for each possible branch in the function.</p>
+
+<div class="notices note" ><p>We could also write tests to check the <strong>type</strong> of the input, though above
+we&rsquo;ve used <a href="https://docs.python.org/3/library/typing.html">type annotations</a>
+instead.
+Using type annotations and a static type checker like
+<a href="http://mypy-lang.org/">mypy</a> has been
+recommended since Python 3.7, though not all scientific Python libraries have
+adopted type annotations yet (an opportunity for contributors 😉).</p>
 </div>
 
-<p>This site is dedicated to the organization of the scientific Python new
-contributors workshop, hosted virtually on <strong>June 3rd-4th 2021</strong> for the
-2021 cohort of AMMI students.
-The goal of this workshop is to connect AMMI students with developers of
-open source software packages commonly used in their research.
-Developers from some popular scientific software packages like
-<a href="https://numpy.org/">NumPy</a>, <a href="https://networkx.org/">NetworkX</a>,
-and <a href="https://scikit-image.org/">scikit-image</a> will introduce their projects,
-and provide students a behind-the-scenes look at how these packages are
-developed.
-The workshop will conclude with a <strong>mentored sprint</strong>.</p>
-<h3 id="schedule">Schedule</h3>
-<p>The two-day workshop will be held in the afternoons from <strong>2PM - 5PM GMT</strong> on
-Thursday June 3rd and Friday June 4th.</p>
-<p>Click <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&amp;iso=20210603T14&amp;p1=%3A&amp;ah=3">here</a> to view the workshop times in your timezone.</p>
+<p>This is of course a very trivial case where the branches are easy to identify &mdash;
+in practice analyzing test coverage is generally more difficult.
+Fortunately there are automated tools, including a plugin for <code>pytest</code>,
+<a href="https://pytest-cov.readthedocs.io/en/latest/">pytest-cov</a>, that automates
+this process.</p>
 
-<div class="notices info" ><p>This <strong>tentative</strong> schedule is subject to change; please check back often!
-Information will be updated leading up to the workshop.</p>
+<div class="notices tip" ><p>In my opinion, checking out the test coverage of a project is
+an <strong>excellent</strong> way to start contributing.
+Coverage analysis tools like <code>pytest-cov</code> can help you identify areas in a
+library where behavior is poorly defined.
+In my experience, this very often leads to valuable issues where experienced
+maintainers can provide insight on intended behavior, which often leads to
+a better understanding of core concepts in the library.</p>
 </div>
 
-<h4 id="thursday-june-3rd">Thursday, June 3rd</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Welcome and General Introduction</li>
-<li><strong>15:00 - 15:45:</strong> Contributing to OSS - Getting Started</li>
-<li><strong>16:00 - 17:00:</strong> Project introductions</li>
-</ul>
-<h4 id="friday-june-4th">Friday, June 4th</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Sprint preparation</li>
-<li><strong>15:00 - 17:00:</strong> Mentored sprint</li>
-</ul>
-<p>Please see the side bar for further detail about the listed activities.</p>
+<p>It&rsquo;s important to note that, while important, high test coverage is not
+<strong>sufficient</strong> to guarantee that code is well-tested!
+Can you think of examples of how the tests for <code>foo</code> could be improved?</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><strong>Backward compatibility</strong> is an important feature for open source projects.
+Basically, it&rsquo;s a guarantee to users that anyone who is <em>using</em> your code
+will not have it <em>change unexpectedly</em> without warning.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>There is a lot of flexibility in how tests can be organized!&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>This is often referred to as <strong>test-driven development</strong> or TDD.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -725,132 +893,6 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -866,6 +908,9 @@ Information will be updated leading up to the workshop.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -914,6 +959,142 @@ Information will be updated leading up to the workshop.</p>
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1005,8 +1186,10 @@ Information will be updated leading up to the workshop.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/" title="Documentation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/" title="Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/contribution_types/" title="Contribution Types" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

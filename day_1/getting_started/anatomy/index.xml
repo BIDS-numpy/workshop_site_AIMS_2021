@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anatomy of a Python project on AMMI Scientific Python Workshop</title>
+    <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/</link>
+    <description>Recent content in Anatomy of a Python project on AMMI Scientific Python Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/</guid>
+      <description>Documentation is an important part of any software project, especially since it&amp;rsquo;s usually the first thing that newcomers see! It&amp;rsquo;s so important in fact, that many projects have sub-projects or teams1 specifically dedicated to the documentation.
+Documentation for Python projects Python projects typically2 use Sphinx to generate the documentation. In two sentences or less, Sphinx is a documentation generation engine that converts the content written in a markup language to various other outputs, including html which can then be published to the internet.</description>
+    </item>
+    
+    <item>
+      <title>Tests</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/</guid>
+      <description>The collection of all tests that are included in the software package, often referred to collectively as the test suite. The test suite is an important part of any software project, but this is especially true for open source software. Tests help define expected behavior, and are extremely helpful in detecting unexpected behavior changes. Any time you make a change to an existing project, you should always run the test suite to check that your changes have not changed behavior in a way that would be incompatible with the existing software1.</description>
+    </item>
+    
+  </channel>
+</rss>

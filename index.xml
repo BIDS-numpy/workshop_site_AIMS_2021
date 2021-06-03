@@ -8,6 +8,26 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 30 May 2021 07:13:11 -0700</lastBuildDate><atom:link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Getting the source code</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/</guid>
+      <description>The source code for scientific Python projects is managed with git. Most scientific Python projects have their main repository available online on GitHub; for example:
+ NumPy: https://github.com/numpy/numpy SciPy: https://github.com/scipy/scipy NetworkX: https://github.com/networkx/networkx scikit-image: https://github.com/scikit-image/scikit-image scikit-learn: https://github.com/scikit-learn/scikit-learn  Step 1: Fork the main repository Start by forking the repository. This creates a copy of the remote repository under your own GitHub account that you can both pull from and push to.</description>
+    </item>
+    
+    <item>
+      <title>Development Environment</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/</guid>
+      <description>Now that we have the source code, we need to set up a development environment in order to be able to do things like:
+ build the project run the test suite / evaluate changes locally build the documentation for the project  Step 1: Installing dependencies Most projects depend on other software. Installing and managing these dependencies can be a daunting task until you&amp;rsquo;re used to it. Fortunately, there are some straight-forward best-practices to help guide the process.</description>
+    </item>
+    
+    <item>
       <title>Background</title>
       <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,7 +65,8 @@ More and more, modern research involves the development of software to implement
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/homework/</guid>
-      <description></description>
+      <description>A fitting meme | attribution: https://twitter.com/designuxui/status/490179377099845632   Now it&amp;rsquo;s your turn! We&amp;rsquo;ve layed out the basics of how to get the source code and spin up a working development environment, but like most things &amp;mdash; the devil is in the details 😄. In preparation for tomorrow, I&amp;rsquo;d like you to pick a Python package and try setting up a development environment!
+You can choose whichever package you&amp;rsquo;d like - I&amp;rsquo;d recommend maybe choosing one that you use often (e.</description>
     </item>
     
     <item>
@@ -76,6 +97,36 @@ Becoming a better developer One of the best ways to improve your own coding abil
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/survey/</guid>
       <description>AMMI Students Please complete the following survey to help the mentors prepare content for the workshop. Having some basic information about the workflows and development practices you&amp;rsquo;re most familiar with will help us tailor the workshop to ensure that you get the most out of it! Personal information is not being collected! All answers to the survey will remain completely anonymous and the aggregate results will not be shared with anyone except the workshop mentors.</description>
+    </item>
+    
+    <item>
+      <title>Contribution Types</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/contribution_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/contribution_types/</guid>
+      <description>There are many different ways that one can contribute to open source projects. In this workshop we&amp;rsquo;re focused mostly on the various ways that you can contribute as a developer.
+Developer Contributions There are three main ways that you can contribute to an open source software project as a developer:
+ Submitting new code (via pull requests) Opening issues Reviewing others&#39; code  Submitting Pull Requests It&amp;rsquo;s obvious how submitting new code contributes to the development of a library, though it&amp;rsquo;s important to note that not every PR has to be new functionality.</description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/</guid>
+      <description>Documentation is an important part of any software project, especially since it&amp;rsquo;s usually the first thing that newcomers see! It&amp;rsquo;s so important in fact, that many projects have sub-projects or teams1 specifically dedicated to the documentation.
+Documentation for Python projects Python projects typically2 use Sphinx to generate the documentation. In two sentences or less, Sphinx is a documentation generation engine that converts the content written in a markup language to various other outputs, including html which can then be published to the internet.</description>
+    </item>
+    
+    <item>
+      <title>Tests</title>
+      <link>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/</guid>
+      <description>The collection of all tests that are included in the software package, often referred to collectively as the test suite. The test suite is an important part of any software project, but this is especially true for open source software. Tests help define expected behavior, and are extremely helpful in detecting unexpected behavior changes. Any time you make a change to an existing project, you should always run the test suite to check that your changes have not changed behavior in a way that would be incompatible with the existing software1.</description>
     </item>
     
   </channel>

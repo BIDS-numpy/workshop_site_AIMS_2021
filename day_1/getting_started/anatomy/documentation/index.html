@@ -9,7 +9,7 @@
 
     
 
-    <title>   AMMI Scientific Python Workshop</title>
+    <title>Documentation   AMMI Scientific Python Workshop</title>
 
     
     <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622712044" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/">
+  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/">
     <nav id="sidebar" class="">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/day_1/" title="Day 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -346,7 +346,7 @@
   
     
     <li data-nav-id="/day_1/getting_started/" title="Getting Started" class="dd-item
-        
+        parent
         
         
         ">
@@ -375,7 +375,7 @@
   
     
     <li data-nav-id="/day_1/getting_started/anatomy/" title="Anatomy of a Python project" class="dd-item
-        
+        parent
         
         
         ">
@@ -401,7 +401,7 @@
  
   
     
-      <li data-nav-id="/day_1/getting_started/anatomy/documentation/" title="Documentation" class="dd-item ">
+      <li data-nav-id="/day_1/getting_started/anatomy/documentation/" title="Documentation" class="dd-item active">
         <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/">
         Documentation
         
@@ -601,64 +601,188 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/'>Day 1</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/'>Getting Started</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/'>Anatomy of a Python project</a> > Documentation
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Documentation
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aimsammi-scientific-python-workshop">AIMS/AMMI Scientific Python Workshop</h1>
-<p>A workshop for new contributors to open source scientific software in Python,
-hosted by the <a href="https://nexteinstein.org/">AIMS</a>
-<a href="https://aimsammi.org/">African Master&rsquo;s in Machine Intelligence (AMMI)</a> program.</p>
-<h3 id="welcome">Welcome!</h3>
-
-<div class="notices note" ><p><strong>Students:</strong> Please visit the <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/">Preparation</a>
-page and complete the tasks there <em>before</em> the workshop begins!</p>
+<p>Documentation is an important part of any software project, especially since it&rsquo;s
+usually the first thing that newcomers see!
+It&rsquo;s so important in fact, that many projects have sub-projects or
+teams<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> specifically dedicated to the documentation.</p>
+<h4 id="documentation-for-python-projects">Documentation for Python projects</h4>
+<p>Python projects typically<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> use <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> to generate the documentation.
+In two sentences or less, Sphinx is a documentation generation engine that
+converts the content written in a <em>markup language</em> to various other outputs,
+including <code>html</code> which can then be published to the internet.
+Typically, the <em>markup language</em> of choice for Python projects is
+<a href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> (often referred
+to as &ldquo;r-s-t&rdquo; or &ldquo;rest&rdquo;, with a <code>.rst</code> file extension), though other
+markup languages such as <code>markdown</code> can be used<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>One of the most important aspects of Sphinx is that it generates documentation
+<strong>directly from Python docstrings</strong>.
+This may not sound like a big deal, but it solves a huge problem in
+guaranteeing that the <strong>source code</strong> and the <strong>documentation</strong> are in sync.
+From a developer&rsquo;s perspective, this often means
+<strong>updating the documentation of a project requires modifying the source code
+(in the form of docstrings).</strong>
+Therefore it is important to know how to navigate an build a project,
+even if you&rsquo;re only interested in modifying documentation.</p>
+<h4 id="documentation-structure">Documentation structure</h4>
+<p>Like the project itself, there are many variations between projects on how
+documentation is organized, but there are some common patterns.</p>
+<ul>
+<li>The documentation for a project lives in a documentation directory
+(most often called <code>doc/</code> or <code>docs/</code>) in the top-level of the project.</li>
+<li>Within this directory, there will be a <code>conf.py</code> file<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> which specifies
+Sphinx configuration.</li>
+<li>Usually there is a build utility to help you build the documentation.
+Often times this comes in the form of a <code>Makefile</code> (or <code>make.bat</code> for Windows)
+or some other script (e.g. <code>pandas</code> has a <code>make.py</code> that should work on
+any platform).</li>
+<li>Often times the documentation is organized in a directory called <code>source</code>
+or something similar, though the exact organization varies between projects.</li>
+</ul>
+<h4 id="building-documentation-locally">Building documentation locally</h4>
+<p>It is usually recommended to build documentation locally whenever you are
+making non-trivial changes, just to be sure that your changes are rendering
+properly in the html output<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>This is usually most easily accomplished using the build utility referred to
+above.
+For example, both NumPy and NetworkX provide a <code>Makefile</code>, so the documentation
+can be built from the <code>doc/</code> directory with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make html
+</code></pre></div>
+<div class="notices info" ><p>Remember - Sphinx generates documentation directly from the source code.
+This means that, for projects with C-extensions, you will often have to
+build the project locally in order to be able to build the documentation!
+On Linux/MacOS this usually isn&rsquo;t much of an issue, though it may require the
+installation of external build dependencies either via <code>conda</code> or the system
+package manager.
+Building on Windows generally tends to be more complicated.
+We&rsquo;ll discuss building projects more
+<a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/">later</a></p>
 </div>
 
-<p>This site is dedicated to the organization of the scientific Python new
-contributors workshop, hosted virtually on <strong>June 3rd-4th 2021</strong> for the
-2021 cohort of AMMI students.
-The goal of this workshop is to connect AMMI students with developers of
-open source software packages commonly used in their research.
-Developers from some popular scientific software packages like
-<a href="https://numpy.org/">NumPy</a>, <a href="https://networkx.org/">NetworkX</a>,
-and <a href="https://scikit-image.org/">scikit-image</a> will introduce their projects,
-and provide students a behind-the-scenes look at how these packages are
-developed.
-The workshop will conclude with a <strong>mentored sprint</strong>.</p>
-<h3 id="schedule">Schedule</h3>
-<p>The two-day workshop will be held in the afternoons from <strong>2PM - 5PM GMT</strong> on
-Thursday June 3rd and Friday June 4th.</p>
-<p>Click <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&amp;iso=20210603T14&amp;p1=%3A&amp;ah=3">here</a> to view the workshop times in your timezone.</p>
+<p>Assuming the build was successful, the built html documentation will be
+stored in a build directory, typically <code>_build/html</code> or <code>build/html</code>.
+You can then view the results by opening the local documentation in a browser.
+For example, if you cloned <code>networkx</code> to <code>/home/repos/networkx</code> and
+subsequently built the documentation, view the results by opening your
+favorite web browser and providing the <code>file://</code> url to the <code>index.html</code>, e.g.
+<code>file:///home/repos/networkx/doc/build/html/index.html</code>.</p>
 
-<div class="notices info" ><p>This <strong>tentative</strong> schedule is subject to change; please check back often!
-Information will be updated leading up to the workshop.</p>
+<div class="notices tip" ><p>Having the documentation available locally can be particularly useful if you
+are working somewhere without internet!</p>
 </div>
 
-<h4 id="thursday-june-3rd">Thursday, June 3rd</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Welcome and General Introduction</li>
-<li><strong>15:00 - 15:45:</strong> Contributing to OSS - Getting Started</li>
-<li><strong>16:00 - 17:00:</strong> Project introductions</li>
-</ul>
-<h4 id="friday-june-4th">Friday, June 4th</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Sprint preparation</li>
-<li><strong>15:00 - 17:00:</strong> Mentored sprint</li>
-</ul>
-<p>Please see the side bar for further detail about the listed activities.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>For example, the <a href="https://numpy.org/devdocs/dev/howto-docs.html#documentation-team-meetings">NumPy documentation team</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>As of 2021&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Support for other markup languages like markdown or <a href="https://myst-parser.readthedocs.io/en/latest/">MyST</a> is
+added using <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html">sphinx extensions</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Unfortunately it is not necessarily located in the same place for each
+project. Try <code>find doc/ -name conf.py</code>.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>reStructuredText syntax is notoriously tricky - even experienced authors
+of reST must check their work often!&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -725,6 +849,7 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
+                    
                 
                 
 
@@ -740,34 +865,8 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -776,41 +875,6 @@ Information will be updated leading up to the workshop.</p>
                     
                     
 
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -857,21 +921,6 @@ Information will be updated leading up to the workshop.</p>
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -895,6 +944,91 @@ Information will be updated leading up to the workshop.</p>
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1005,8 +1139,10 @@ Information will be updated leading up to the workshop.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/" title="Anatomy of a Python project"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/" title="Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/testing/" title="Tests" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

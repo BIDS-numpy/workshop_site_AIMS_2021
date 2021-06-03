@@ -9,7 +9,7 @@
 
     
 
-    <title>   AMMI Scientific Python Workshop</title>
+    <title>Anatomy of a Python project   AMMI Scientific Python Workshop</title>
 
     
     <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622712044" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/">
+  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/">
     <nav id="sidebar" class="">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/day_1/" title="Day 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -346,7 +346,7 @@
   
     
     <li data-nav-id="/day_1/getting_started/" title="Getting Started" class="dd-item
-        
+        parent
         
         
         ">
@@ -375,8 +375,8 @@
   
     
     <li data-nav-id="/day_1/getting_started/anatomy/" title="Anatomy of a Python project" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/">
@@ -601,64 +601,132 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/'>Day 1</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/'>Getting Started</a> > Anatomy of a Python project
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Anatomy of a Python project
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aimsammi-scientific-python-workshop">AIMS/AMMI Scientific Python Workshop</h1>
-<p>A workshop for new contributors to open source scientific software in Python,
-hosted by the <a href="https://nexteinstein.org/">AIMS</a>
-<a href="https://aimsammi.org/">African Master&rsquo;s in Machine Intelligence (AMMI)</a> program.</p>
-<h3 id="welcome">Welcome!</h3>
 
-<div class="notices note" ><p><strong>Students:</strong> Please visit the <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/">Preparation</a>
-page and complete the tasks there <em>before</em> the workshop begins!</p>
+	<p>Every Python project is different, but there are some high-level features that
+each will have in common.
+For example, all Python projects will have a top-level <strong>package</strong> in which
+the source code lives, as well as <strong>documentation</strong> and a <strong>test suite</strong>.
+Understanding these similarities will make it easier to navigate and work on
+different projects.</p>
+
+<div class="notices tip" ><p>The <a href="https://packaging.python.org/tutorials/packaging-projects/">Python packaging tutorial</a> is the ultimate resource for
+learning more about how Python packages are structured.
+It goes into much more detail than we will cover here.</p>
 </div>
 
-<p>This site is dedicated to the organization of the scientific Python new
-contributors workshop, hosted virtually on <strong>June 3rd-4th 2021</strong> for the
-2021 cohort of AMMI students.
-The goal of this workshop is to connect AMMI students with developers of
-open source software packages commonly used in their research.
-Developers from some popular scientific software packages like
-<a href="https://numpy.org/">NumPy</a>, <a href="https://networkx.org/">NetworkX</a>,
-and <a href="https://scikit-image.org/">scikit-image</a> will introduce their projects,
-and provide students a behind-the-scenes look at how these packages are
-developed.
-The workshop will conclude with a <strong>mentored sprint</strong>.</p>
-<h3 id="schedule">Schedule</h3>
-<p>The two-day workshop will be held in the afternoons from <strong>2PM - 5PM GMT</strong> on
-Thursday June 3rd and Friday June 4th.</p>
-<p>Click <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&amp;iso=20210603T14&amp;p1=%3A&amp;ah=3">here</a> to view the workshop times in your timezone.</p>
+<h4 id="python-packaging">Python packaging</h4>
+<p>Python projects are typically composed of multiple <code>.py</code> files<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> that are
+stored in a directory in the root of the project.
+This is the top-level Python <strong>package</strong> that contains the code and tests for
+the project.</p>
 
-<div class="notices info" ><p>This <strong>tentative</strong> schedule is subject to change; please check back often!
-Information will be updated leading up to the workshop.</p>
+<div class="notices info" ><p>In most cases, the <strong>package</strong> name and the <strong>repository</strong> name are the same,
+which means that the project directory and the source code directory have the
+same name!
+This can be confusing at first &mdash; just remember that the outer directory
+contains the <strong>entire</strong> project, including the documentation, license, README,
+etc. while the inner directory contains the Python package, including
+source code and tests.
+For more information, check out the <a href="https://docs.python-guide.org/writing/structure/">Hitchhiker&rsquo;s Guide to Python</a>.</p>
 </div>
 
-<h4 id="thursday-june-3rd">Thursday, June 3rd</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Welcome and General Introduction</li>
-<li><strong>15:00 - 15:45:</strong> Contributing to OSS - Getting Started</li>
-<li><strong>16:00 - 17:00:</strong> Project introductions</li>
-</ul>
-<h4 id="friday-june-4th">Friday, June 4th</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Sprint preparation</li>
-<li><strong>15:00 - 17:00:</strong> Mentored sprint</li>
-</ul>
-<p>Please see the side bar for further detail about the listed activities.</p>
+<p>The important point here is that both the <strong>source code</strong> and the <strong>tests</strong>
+are found in the top-level package.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>In many cases, projects will also include C-extensions written directly
+in C or C++, or using other popular tools such as <a href="https://cython.org/">Cython</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div>
         
@@ -725,6 +793,7 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
+                    
                 
                 
 
@@ -740,34 +809,8 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -776,41 +819,6 @@ Information will be updated leading up to the workshop.</p>
                     
                     
 
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -857,8 +865,6 @@ Information will be updated leading up to the workshop.</p>
 
                     
                     
-                        
-                    
                     
 
                     
@@ -875,10 +881,81 @@ Information will be updated leading up to the workshop.</p>
                     
 
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1005,8 +1082,10 @@ Information will be updated leading up to the workshop.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/" title="Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/anatomy/documentation/" title="Documentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1038,4 +1117,3 @@ Information will be updated leading up to the workshop.</p>
 
   </body>
 </html>
-

@@ -9,7 +9,7 @@
 
     
 
-    <title>   AMMI Scientific Python Workshop</title>
+    <title>Getting the source code   AMMI Scientific Python Workshop</title>
 
     
     <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622712044" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/">
+  <body class="" data-url="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/">
     <nav id="sidebar" class="">
 
 
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/day_1/" title="Day 1" class="dd-item
-        
+        parent
         
         
         ">
@@ -483,7 +483,7 @@
   
     
     <li data-nav-id="/day_1/setting_up/" title="Setting Up" class="dd-item
-        
+        parent
         
         
         ">
@@ -509,7 +509,7 @@
  
   
     
-      <li data-nav-id="/day_1/setting_up/getting_the_source/" title="Getting the source code" class="dd-item ">
+      <li data-nav-id="/day_1/setting_up/getting_the_source/" title="Getting the source code" class="dd-item active">
         <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/">
         Getting the source code
         
@@ -601,64 +601,150 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/'></a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/'>Day 1</a> > <a href='https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/'>Setting Up</a> > Getting the source code
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#all-set">All set!</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Getting the source code
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aimsammi-scientific-python-workshop">AIMS/AMMI Scientific Python Workshop</h1>
-<p>A workshop for new contributors to open source scientific software in Python,
-hosted by the <a href="https://nexteinstein.org/">AIMS</a>
-<a href="https://aimsammi.org/">African Master&rsquo;s in Machine Intelligence (AMMI)</a> program.</p>
-<h3 id="welcome">Welcome!</h3>
+<p>The source code for scientific Python projects is managed with <code>git</code>.
+Most scientific Python projects have their <strong>main repository</strong> available online
+on GitHub; for example:</p>
+<ul>
+<li>NumPy: <a href="https://github.com/numpy/numpy">https://github.com/numpy/numpy</a></li>
+<li>SciPy: <a href="https://github.com/scipy/scipy">https://github.com/scipy/scipy</a></li>
+<li>NetworkX: <a href="https://github.com/networkx/networkx">https://github.com/networkx/networkx</a></li>
+<li>scikit-image: <a href="https://github.com/scikit-image/scikit-image">https://github.com/scikit-image/scikit-image</a></li>
+<li>scikit-learn: <a href="https://github.com/scikit-learn/scikit-learn">https://github.com/scikit-learn/scikit-learn</a></li>
+</ul>
+<h4 id="step-1-fork-the-main-repository">Step 1: Fork the main repository</h4>
+<p>Start by <a href="https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo">forking the repository</a>. This creates a copy of the remote
+repository under your own GitHub account that you can both <code>pull</code> from <strong>and</strong>
+<code>push</code> to.</p>
 
-<div class="notices note" ><p><strong>Students:</strong> Please visit the <a href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/">Preparation</a>
-page and complete the tasks there <em>before</em> the workshop begins!</p>
+<div class="notices note" ><p>Not sure if you&rsquo;ve already forked a repo? No problem! GitHub will check for
+this automatically, so go ahead and click the Fork button anyway.</p>
 </div>
 
-<p>This site is dedicated to the organization of the scientific Python new
-contributors workshop, hosted virtually on <strong>June 3rd-4th 2021</strong> for the
-2021 cohort of AMMI students.
-The goal of this workshop is to connect AMMI students with developers of
-open source software packages commonly used in their research.
-Developers from some popular scientific software packages like
-<a href="https://numpy.org/">NumPy</a>, <a href="https://networkx.org/">NetworkX</a>,
-and <a href="https://scikit-image.org/">scikit-image</a> will introduce their projects,
-and provide students a behind-the-scenes look at how these packages are
-developed.
-The workshop will conclude with a <strong>mentored sprint</strong>.</p>
-<h3 id="schedule">Schedule</h3>
-<p>The two-day workshop will be held in the afternoons from <strong>2PM - 5PM GMT</strong> on
-Thursday June 3rd and Friday June 4th.</p>
-<p>Click <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=AMMI+OSS+Workshop&amp;iso=20210603T14&amp;p1=%3A&amp;ah=3">here</a> to view the workshop times in your timezone.</p>
-
-<div class="notices info" ><p>This <strong>tentative</strong> schedule is subject to change; please check back often!
-Information will be updated leading up to the workshop.</p>
+<h4 id="step-2-clone-your-fork">Step 2: Clone your fork</h4>
+<p>After forking, we have a <em>remote</em> copy of the repository that we can make
+changes to.
+However, it is generally much more efficient to work locally, where we have
+access to our preferred tools (text editors, etc.) and can rapidly try
+things out.
+The easiest way to get a local copy of your fork is to <code>clone</code> it.
+For example, if you&rsquo;ve forked networkx:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/&lt;your_user_name&gt;/networkx.git
+</code></pre></div>
+<div class="notices info" ><p>Be sure to replace <code>&lt;your_user_name&gt;</code> above with your actual GitHub user name, e.g.
+<code>rossbar</code> for me!</p>
 </div>
 
-<h4 id="thursday-june-3rd">Thursday, June 3rd</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Welcome and General Introduction</li>
-<li><strong>15:00 - 15:45:</strong> Contributing to OSS - Getting Started</li>
-<li><strong>16:00 - 17:00:</strong> Project introductions</li>
-</ul>
-<h4 id="friday-june-4th">Friday, June 4th</h4>
-<ul>
-<li><strong>14:00 - 15:00:</strong> Sprint preparation</li>
-<li><strong>15:00 - 17:00:</strong> Mentored sprint</li>
-</ul>
-<p>Please see the side bar for further detail about the listed activities.</p>
+<p>This will download the repository to your system and set up a pointer to your
+remote called <code>origin</code> by default:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd networkx
+git remote -v
+</code></pre></div><h4 id="step-3-add-a-pointer-to-the-upstream-remote">Step 3: Add a pointer to the upstream remote</h4>
+<p>The final step in establishing links between the remotes and our local
+repository is to add a pointer to the original <strong>upstream</strong> repository.
+The upstream repository is the one that we forked from in step 1 and that we
+will be making pull requests to later on.</p>
+<p>You can call this remote pointer whatever you&rsquo;d like, though by convention
+it&rsquo;s usually referred to as &ldquo;upstream&rdquo;:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add upstream https://github.com/networkx/networkx/git
+</code></pre></div><p>Adding the pointer to the upstream remote isn&rsquo;t strictly necessary<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> if you&rsquo;re
+only planning on making a quick change, but it&rsquo;s very useful to keep your code
+up-to-date with the latest changes in the main repository.</p>
+<h3 id="all-set">All set!</h3>
+<p>We now have the repository set up to be able to work locally, push our changes
+to <code>origin</code> and pull any changes others have made from <code>upstream</code>.
+Now let&rsquo;s move on to setting up a local development environment!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Assuming there are no merge conflicts!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -725,6 +811,137 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -796,10 +1013,31 @@ Information will be updated leading up to the workshop.</p>
                     
 
                     
+            
+        
+                    
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -817,151 +1055,8 @@ Information will be updated leading up to the workshop.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1005,8 +1100,10 @@ Information will be updated leading up to the workshop.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/" title="Setting Up"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/preparation/" title="Preparation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/" title="Development Environment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
