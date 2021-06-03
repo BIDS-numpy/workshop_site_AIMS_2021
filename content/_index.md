@@ -30,11 +30,6 @@ Thursday June 3rd and Friday June 4th.
 
 Click [here][timeanddate] to view the workshop times in your timezone.
 
-{{% notice info %}}
-This **tentative** schedule is subject to change; please check back often!
-Information will be updated leading up to the workshop.
-{{% /notice %}}
-
 #### Thursday, June 3rd
 
  - **14:00 - 15:00:** Welcome and General Introduction
