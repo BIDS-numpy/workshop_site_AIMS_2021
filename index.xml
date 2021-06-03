@@ -34,8 +34,7 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</guid>
       <description>My background is in nuclear engineering, specifically radiation instrumentation &amp;mdash; devices to measure and image of sources of ionizing radiation. The type of 3D radiation imaging that I studied has applications in environmental monitoring:
-As well as medical imaging:
-This research was entirely made possible by open-source software. Specifically, my colleagues and I relied heavily on various open-source packages like rgbdslam and Google Cartographer to explore integrating our radiation imaging hardware with real-time SLAM algorithms.</description>
+ 3D Radiation Mapping in Fukushima.Right: Aerial view of measurement area. Left: 3D gamma-ray image reconstruction &amp;mdash; Red line = path of imager through the scene, B/W dots = 3D point cloud model of the scene, Heatmap = image reconstruction; color scale corresponds to relative reconstructed intensity.</description>
     </item>
     
     <item>
