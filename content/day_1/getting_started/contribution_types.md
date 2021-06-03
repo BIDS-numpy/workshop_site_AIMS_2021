@@ -38,20 +38,18 @@ of problems that users are experiencing.
 
 {{% notice note %}}
 Determining *when* to open an issue is a fine balancing act: is the behavior
-you're seeing truly unexpected, or are you misunderstanding the function?
+you're seeing truly unexpected, or are you misunderstanding something?
 These types of questions are very common and it is **guaranteed** at some
 point that you will open an issue that reflects your lack of understanding
 rather than a real problem in the code... **and that's okay!**
-On the other hand, the issue tracker shouldn't be the first place you turn
+On the other hand, opening a new issue shouldn't be the **first** thing you do
 every time you have a question... searching the documentation and help forums
 are also very important.
-My personal rule of thumb is:
- - Spend at least 30 minutes researching online:
-   * Search for related issues w/ a search engine
-   * Check the issue tracker for similar issues
-   * Read the related documentation thoroughly, skim over the source code and
-     related tests if relevant.
-
+My personal rule of thumb is to spend at least 30 minutes researching online
+myself before opening a new issue. This usually entails searching for related
+issues w/ a search engine; checking the issue tracker for similar issues; and
+reading the related documentation thoroughly.
+Often times it helps to skim over the source code and related tests.
 This due diligence benefits both yourself (you will be able to explain your
 issue better) and the maintainers (reduces the chance of reporting things that
 aren't actually problems).
