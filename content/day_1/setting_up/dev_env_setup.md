@@ -144,6 +144,21 @@ You'll have plenty of time to experiment during your
 
 From the top-level directory in the repository: `python -m pip install -e .`[^1][^2]
 
+{{% notice info %}}
+Most packages (e.g. `numpy`, `scipy`, `matplotlib`, `scikit-image`, `scikit-learn`, etc.)
+include C-extensions that must be compiled.
+The compiling happens at this stage, so building some packages may take much
+longer than others, and may require additional *external* (i.e. not managed by `pip`)
+build tools like a compiler.
+{{% /notice %}}
+
+{{% notice note %}}
+Sometimes you will hear the term **pure-Python package** --- this means that
+the package does *not* include any C-extensions and is generally much more
+straightforward to install on all platforms.
+NetworkX is an example of a pure-Python package.
+{{% /notice %}}
+
 [^1]: The `-e` flag creates an [editable](https://pip.pypa.io/en/stable/cli/pip_install/#install-editable) mode.
 [^2]: `pip` can be used to build from source within a `conda` environment.
 
