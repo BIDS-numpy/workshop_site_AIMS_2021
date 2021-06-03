@@ -55,6 +55,19 @@ issue better) and the maintainers (reduces the chance of reporting things that
 aren't actually problems).
 {{% /notice %}}
 
+{{% notice tip %}}
+Want to practice opening issues? --- why not start with this website!
+The site is generated from markdown using [hugo](https://gohugo.io/); the
+source repository is [here](https://github.com/BIDS-numpy/workshop_site_AIMS_2021).
+If find a problem with the site (e.g. a typo, broken link, or something just
+doesn't make sense), please [open an issue][site-issues].
+If you're *really* interested - feel free to fork the repository and open a
+PR for any problems you'd like to fix yourself!
+
+[site-issues]: https://github.com/BIDS-numpy/workshop_site_AIMS_2021/issues/new
+{{% /notice %}}
+
+
 #### Reviewing Code
 
 Code review is often overlooked as a contribution type, but it can be among
