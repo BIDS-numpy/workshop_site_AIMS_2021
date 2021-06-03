@@ -123,7 +123,8 @@ conda install --file requirements.txt
 {{< /tabs >}}
 
 {{% notice info %}}
-The above code will install the necessary dependencies needed to **install**
+**For those of you following along with NetworkX:**
+This command will install the necessary dependencies needed to **install**
 NetworkX and **run the test suite**.
 However, the dependencies for building the documentation **are not included**!
 Can you figure out how to install the extra dependencies required to
