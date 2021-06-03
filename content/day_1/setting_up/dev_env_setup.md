@@ -159,6 +159,29 @@ straightforward to install on all platforms.
 NetworkX is an example of a pure-Python package.
 {{% /notice %}}
 
+### Step 3: Test the installation
+
+If you've made it to this step --- congratulations!
+You've successfully installed the development version of a Python package from
+source :tada:!
+
+Now that you have the package installed, you'll want to verify that everything
+is working as expected.
+The easiest way to do this is to **run the test suite**.
+From the top-level of the repository, you can invoke `pytest` on the local
+installation by:
+
+```bash
+pytest .
+```
+
+This will collect every test available in the entire test suite and run each
+one.
+Most Python packages have thousands of tests, so this may take several minutes!
+If everything passes, then you have a strong indication that the installation
+was successful and you have a solid starting point for modifying the source
+code to make your own contribution!
+
 [^1]: The `-e` flag creates an [editable](https://pip.pypa.io/en/stable/cli/pip_install/#install-editable) mode.
 [^2]: `pip` can be used to build from source within a `conda` environment.
 
