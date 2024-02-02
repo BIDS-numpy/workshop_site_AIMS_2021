@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/</guid>
-      <description>Scientific research depends on the effective communication of new ideas, methods, and results. Other researchers must be able to understand your ideas and reproduce your results in order to critique and expand upon your work. The open source development model, based on distributed version control (like git) and permissive licenses guarantee that everyone has equal access to others&#39; work and can verify and build upon it without limitation.
+      <description>Scientific research depends on the effective communication of new ideas, methods, and results. Other researchers must be able to understand your ideas and reproduce your results in order to critique and expand upon your work. The open source development model, based on distributed version control (like git) and permissive licenses guarantee that everyone has equal access to others&amp;rsquo; work and can verify and build upon it without limitation.
 More and more, modern research involves the development of software to implement and explore new ideas.</description>
     </item>
     
@@ -24,7 +24,7 @@ More and more, modern research involves the development of software to implement
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/</guid>
       <description>There are many ways that contributing to open-source software benefits other researchers:
 Accessibility Contributing to open-source software packages makes your work accessible to anyone with an internet connection!
- Traditional publishing media such as scientific journals or conferences often require access fees or have limited attendance numbers.  Effective Communication Well-written Python code is often among the most effective ways to communicate! For example, here&amp;rsquo;s the mathematical formula for a List-mode Maximum Likelihood Expectation Maximization algorithm used for image reconstruction:</description>
+Traditional publishing media such as scientific journals or conferences often require access fees or have limited attendance numbers. Effective Communication Well-written Python code is often among the most effective ways to communicate! For example, here&amp;rsquo;s the mathematical formula for a List-mode Maximum Likelihood Expectation Maximization algorithm used for image reconstruction:</description>
     </item>
     
     <item>

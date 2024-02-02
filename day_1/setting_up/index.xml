@@ -13,7 +13,8 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/</guid>
       <description>The source code for scientific Python projects is managed with git. Most scientific Python projects have their main repository available online on GitHub; for example:
- NumPy: https://github.com/numpy/numpy SciPy: https://github.com/scipy/scipy NetworkX: https://github.com/networkx/networkx scikit-image: https://github.com/scikit-image/scikit-image scikit-learn: https://github.com/scikit-learn/scikit-learn  Step 1: Fork the main repository Start by forking the repository. This creates a copy of the remote repository under your own GitHub account that you can both pull from and push to.</description>
+NumPy: https://github.com/numpy/numpy SciPy: https://github.com/scipy/scipy NetworkX: https://github.com/networkx/networkx scikit-image: https://github.com/scikit-image/scikit-image scikit-learn: https://github.com/scikit-learn/scikit-learn Step 1: Fork the main repository Start by forking the repository. This creates a copy of the remote repository under your own GitHub account that you can both pull from and push to.
+Not sure if you&amp;rsquo;ve already forked a repo?</description>
     </item>
     
     <item>
@@ -23,7 +24,7 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/</guid>
       <description>Now that we have the source code, we need to set up a development environment in order to be able to do things like:
- build the project run the test suite / evaluate changes locally build the documentation for the project  Step 1: Installing dependencies Most projects depend on other software. Installing and managing these dependencies can be a daunting task until you&amp;rsquo;re used to it. Fortunately, there are some straight-forward best-practices to help guide the process.</description>
+build the project run the test suite / evaluate changes locally build the documentation for the project Step 1: Installing dependencies Most projects depend on other software. Installing and managing these dependencies can be a daunting task until you&amp;rsquo;re used to it. Fortunately, there are some straight-forward best-practices to help guide the process.</description>
     </item>
     
   </channel>

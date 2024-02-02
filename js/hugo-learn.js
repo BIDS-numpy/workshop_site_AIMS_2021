@@ -32,9 +32,6 @@ images.wrap(function(){
 // Change styles, depending on parameters set to the image
 images.each(function(index){
   var image = $(this)
-  var width = image.width;
-  var height = image.height;
-  var cssclass = image.class;
   var o = getUrlParameter(image[0].src);
   if (typeof o !== "undefined") {
     var h = o["height"];
@@ -43,18 +40,18 @@ images.each(function(index){
     image.css("width", function() {
       if (typeof w !== "undefined") {
         return w;
-      } else if (typeof width === "undefined" ) {
+      } else {
         return "auto";
       }
     });
     image.css("height", function() {
       if (typeof h !== "undefined") {
         return h;
-      } else if (typeof height === "undefined" ) {
+      } else {
         return "auto";
       }
     });
-    if (typeof c !== "undefined" && typeof cssclass !== "undefined") {
+    if (typeof c !== "undefined") {
       var classes = c.split(',');
       for (i = 0; i < classes.length; i++) {
         image.addClass(classes[i]);

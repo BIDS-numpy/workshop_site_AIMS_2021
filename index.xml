@@ -14,7 +14,8 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/getting_the_source/</guid>
       <description>The source code for scientific Python projects is managed with git. Most scientific Python projects have their main repository available online on GitHub; for example:
- NumPy: https://github.com/numpy/numpy SciPy: https://github.com/scipy/scipy NetworkX: https://github.com/networkx/networkx scikit-image: https://github.com/scikit-image/scikit-image scikit-learn: https://github.com/scikit-learn/scikit-learn  Step 1: Fork the main repository Start by forking the repository. This creates a copy of the remote repository under your own GitHub account that you can both pull from and push to.</description>
+NumPy: https://github.com/numpy/numpy SciPy: https://github.com/scipy/scipy NetworkX: https://github.com/networkx/networkx scikit-image: https://github.com/scikit-image/scikit-image scikit-learn: https://github.com/scikit-learn/scikit-learn Step 1: Fork the main repository Start by forking the repository. This creates a copy of the remote repository under your own GitHub account that you can both pull from and push to.
+Not sure if you&amp;rsquo;ve already forked a repo?</description>
     </item>
     
     <item>
@@ -24,7 +25,7 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/setting_up/dev_env_setup/</guid>
       <description>Now that we have the source code, we need to set up a development environment in order to be able to do things like:
- build the project run the test suite / evaluate changes locally build the documentation for the project  Step 1: Installing dependencies Most projects depend on other software. Installing and managing these dependencies can be a daunting task until you&amp;rsquo;re used to it. Fortunately, there are some straight-forward best-practices to help guide the process.</description>
+build the project run the test suite / evaluate changes locally build the documentation for the project Step 1: Installing dependencies Most projects depend on other software. Installing and managing these dependencies can be a daunting task until you&amp;rsquo;re used to it. Fortunately, there are some straight-forward best-practices to help guide the process.</description>
     </item>
     
     <item>
@@ -34,7 +35,7 @@
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/background/</guid>
       <description>My background is in nuclear engineering, specifically radiation instrumentation &amp;mdash; devices to measure and image of sources of ionizing radiation. The type of 3D radiation imaging that I studied has applications in environmental monitoring:
- 3D Radiation Mapping in Fukushima.Right: Aerial view of measurement area. Left: 3D gamma-ray image reconstruction &amp;mdash; Red line = path of imager through the scene, B/W dots = 3D point cloud model of the scene, Heatmap = image reconstruction; color scale corresponds to relative reconstructed intensity.</description>
+3D Radiation Mapping in Fukushima.Right: Aerial view of measurement area. Left: 3D gamma-ray image reconstruction &amp;mdash; Red line = path of imager through the scene, B/W dots = 3D point cloud model of the scene, Heatmap = image reconstruction; color scale corresponds to relative reconstructed intensity.</description>
     </item>
     
     <item>
@@ -43,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/oss_dev_model/</guid>
-      <description>Scientific research depends on the effective communication of new ideas, methods, and results. Other researchers must be able to understand your ideas and reproduce your results in order to critique and expand upon your work. The open source development model, based on distributed version control (like git) and permissive licenses guarantee that everyone has equal access to others&#39; work and can verify and build upon it without limitation.
+      <description>Scientific research depends on the effective communication of new ideas, methods, and results. Other researchers must be able to understand your ideas and reproduce your results in order to critique and expand upon your work. The open source development model, based on distributed version control (like git) and permissive licenses guarantee that everyone has equal access to others&amp;rsquo; work and can verify and build upon it without limitation.
 More and more, modern research involves the development of software to implement and explore new ideas.</description>
     </item>
     
@@ -54,8 +55,7 @@ More and more, modern research involves the development of software to implement
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/about_me/ecosystem/</guid>
       <description>In general, I am interested in the scientific Python ecosystem, i.e. the collection of open-source Python libraries that are the cornerstone of modern science, engineering, and research:
- Scientific Python EcosystemA visualization of the scientific Python ecosystem. From a nature methods paper on array programming with NumPy.
-  </description>
+Scientific Python EcosystemA visualization of the scientific Python ecosystem. From a nature methods paper on array programming with NumPy.</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ More and more, modern research involves the development of software to implement
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/homework/</guid>
-      <description>A fitting meme | attribution: https://twitter.com/designuxui/status/490179377099845632   Now it&amp;rsquo;s your turn! We&amp;rsquo;ve layed out the basics of how to get the source code and spin up a working development environment, but like most things &amp;mdash; the devil is in the details 😄. In preparation for tomorrow, I&amp;rsquo;d like you to pick a Python package and try setting up a development environment!
+      <description>A fitting meme | attribution: https://twitter.com/designuxui/status/490179377099845632 Now it&amp;rsquo;s your turn! We&amp;rsquo;ve layed out the basics of how to get the source code and spin up a working development environment, but like most things &amp;mdash; the devil is in the details 😄. In preparation for tomorrow, I&amp;rsquo;d like you to pick a Python package and try setting up a development environment!
 You can choose whichever package you&amp;rsquo;d like - I&amp;rsquo;d recommend maybe choosing one that you use often (e.</description>
     </item>
     
@@ -76,7 +76,7 @@ You can choose whichever package you&amp;rsquo;d like - I&amp;rsquo;d recommend 
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/why_oss/benefits_others/</guid>
       <description>There are many ways that contributing to open-source software benefits other researchers:
 Accessibility Contributing to open-source software packages makes your work accessible to anyone with an internet connection!
- Traditional publishing media such as scientific journals or conferences often require access fees or have limited attendance numbers.  Effective Communication Well-written Python code is often among the most effective ways to communicate! For example, here&amp;rsquo;s the mathematical formula for a List-mode Maximum Likelihood Expectation Maximization algorithm used for image reconstruction:</description>
+Traditional publishing media such as scientific journals or conferences often require access fees or have limited attendance numbers. Effective Communication Well-written Python code is often among the most effective ways to communicate! For example, here&amp;rsquo;s the mathematical formula for a List-mode Maximum Likelihood Expectation Maximization algorithm used for image reconstruction:</description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@ Becoming a better developer One of the best ways to improve your own coding abil
       <guid>https://bids-numpy.github.io/workshop_site_AIMS_2021/day_1/getting_started/contribution_types/</guid>
       <description>There are many different ways that one can contribute to open source projects. In this workshop we&amp;rsquo;re focused mostly on the various ways that you can contribute as a developer.
 Developer Contributions There are three main ways that you can contribute to an open source software project as a developer:
- Submitting new code (via pull requests) Opening issues Reviewing others&#39; code  Submitting Pull Requests It&amp;rsquo;s obvious how submitting new code contributes to the development of a library, though it&amp;rsquo;s important to note that not every PR has to be new functionality.</description>
+Submitting new code (via pull requests) Opening issues Reviewing others&amp;rsquo; code Submitting Pull Requests It&amp;rsquo;s obvious how submitting new code contributes to the development of a library, though it&amp;rsquo;s important to note that not every PR has to be new functionality.</description>
     </item>
     
     <item>

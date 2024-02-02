@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="generator" content="Hugo 0.119.0">
     <meta name="description" content="">
 <meta name="author" content="Ross Barnowski">
 
@@ -12,22 +12,22 @@
     <title>It Benefits Others   AMMI Scientific Python Workshop</title>
 
     
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/fontawesome-all.min.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/hybrid.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/featherlight.min.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/perfect-scrollbar.min.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/auto-complete.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/atom-one-dark-reasonable.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/theme.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/tabs.css?1622721765" rel="stylesheet">
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/hugo-theme.css?1622721765" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/nucleus.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/fontawesome-all.min.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/hybrid.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/featherlight.min.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/perfect-scrollbar.min.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/auto-complete.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/atom-one-dark-reasonable.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/theme.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/tabs.css?1706916483" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/hugo-theme.css?1706916483" rel="stylesheet">
     
-    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/theme-blue.css?1622721765" rel="stylesheet">
+    <link href="https://bids-numpy.github.io/workshop_site_AIMS_2021/css/theme-blue.css?1706916483" rel="stylesheet">
     
     
 
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/jquery-3.3.1.min.js?1622721765"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/jquery-3.3.1.min.js?1706916483"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -58,14 +58,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/lunr.min.js?1622721765"></script>
-<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/auto-complete.js?1622721765"></script>
+<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/lunr.min.js?1706916483"></script>
+<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/auto-complete.js?1706916483"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bids-numpy.github.io\/workshop_site_AIMS_2021\/";
     
 </script>
-<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/search.js?1622721765"></script>
+<script type="text/javascript" src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/search.js?1706916483"></script>
 
     
   </div>
@@ -718,11 +718,11 @@ For example, here&rsquo;s the mathematical formula for a
 image reconstruction:</p>
 <p><img src="https://bids-numpy.github.io/workshop_site_AIMS_2021/images/mlem_eqn.png" alt="List-mode ML-EM equation"></p>
 <p>&hellip;and here is a basic (not particularly efficient) implementation:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_em_iteration</span>(<span style="color:#960050;background-color:#1e0010">λ</span>, <span style="color:#960050;background-color:#1e0010">α</span>, s):
-    term_one <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (<span style="color:#960050;background-color:#1e0010">α</span> <span style="color:#960050;background-color:#1e0010">@</span> <span style="color:#960050;background-color:#1e0010">λ</span>)
-    term_two <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">α</span><span style="color:#f92672">.</span>T <span style="color:#960050;background-color:#1e0010">@</span> term_one
-    <span style="color:#66d9ef">return</span> (<span style="color:#960050;background-color:#1e0010">λ</span> <span style="color:#f92672">/</span> s) <span style="color:#f92672">*</span> term_two
-</code></pre></div><p>You be the judge on which one is easier to understand!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_em_iteration</span>(λ, α, s):
+</span></span><span style="display:flex;"><span>    term_one <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (α <span style="color:#f92672">@</span> λ)
+</span></span><span style="display:flex;"><span>    term_two <span style="color:#f92672">=</span> α<span style="color:#f92672">.</span>T <span style="color:#f92672">@</span> term_one
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (λ <span style="color:#f92672">/</span> s) <span style="color:#f92672">*</span> term_two
+</span></span></code></pre></div><p>You be the judge on which one is easier to understand!</p>
 <h4 id="outsized-impact">Outsized impact</h4>
 <p>Any improvement you contribute to an open-source library will benefit <strong>all</strong>
 the users of that library.
@@ -1133,19 +1133,19 @@ where mistakes are often introduced.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/clipboard.min.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/perfect-scrollbar.min.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/perfect-scrollbar.jquery.min.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/jquery.sticky.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/featherlight.min.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/highlight.pack.js?1622721765"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/clipboard.min.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/perfect-scrollbar.min.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/perfect-scrollbar.jquery.min.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/jquery.sticky.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/featherlight.min.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/highlight.pack.js?1706916483"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/modernizr.custom-3.6.0.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/learn.js?1622721765"></script>
-    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/hugo-learn.js?1622721765"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/modernizr.custom-3.6.0.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/learn.js?1706916483"></script>
+    <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/js/hugo-learn.js?1706916483"></script>
     
         
-            <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/mermaid/mermaid.js?1622721765"></script>
+            <script src="https://bids-numpy.github.io/workshop_site_AIMS_2021/mermaid/mermaid.js?1706916483"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
